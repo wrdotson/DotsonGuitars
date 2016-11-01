@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/*  THIS IS STYLES01.CSS
+
+TAG styles:
+definition and "selectors" within the braces
+tagname { selectorname: value; }
+this overrides any built in tags (like "a" and "p") or defines new ones
+
+CLASS styles:
+a "class" is a style not associated generally with a tag; can be explicitly applied independent of tag definitions
+.stylename { selectorname: value; }
+can be applied inside any specific tag instance, like this:  <p class="stylename">Sample paragraph text</p>
+
+ID styles: (useful especially for positioning)
+#stylename { selectorname: value; }
+can be used with divisions that have an ID defined
+
+*/
+
+/******************************************************************
+ ELEMENT SELECTORS (apply to tags like (p) or <a>
+*******************************************************************/
+
+/*
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*/
+
+
+div.slide01 { 
+  background: url(../Images/1733at1800.jpg) no-repeat center center fixed; 
+}
+div.slide02 { 
+  background: url(../Images/FlatTopLizardDetailat1800.jpg) no-repeat center center fixed; 
+}
+div.slide03 { 
+  background: url(../Images/BassDetail4at1800.jpg) no-repeat center center fixed; 
+}
+
+div.slideshow {
+  background-size: cover;
+  transition: background 2s;
+}
+
+div#frontpage {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;	
+}
+
+/******************************************************************
+ CLASS SELECTORS (apply to tags with Class=<whatever> modifiers
+*******************************************************************/
+
+.guitar-front	{ margin-bottom:10px; }
+
+.guitar-back	{ margin-bottom:10px; margin-right:10px; }
+
+.footer-text	{ 
+		  color:#888;
+          font-family:Verdana, Geneva, sans-serif;
+		  font-size:10px;
+		  text-align:left;
+}
+
+.credit-text	{ 
+		  color:#888;
+          font-family:Verdana, Geneva, sans-serif;
+		  font-size:10px;
+		  text-align:left;
+}
+
+.copyrt-text	{ 
+		  color:#777;
+          font-family:Verdana, Geneva, sans-serif;
+		  font-size:10px;
+		  text-align:left;
+          position: fixed;
+          bottom: 10px;
+          right: 20px;
+}
+
+.about-text	{ 
+		  color:#000;
+          font-family:Verdana, Geneva, sans-serif;
+		  font-size:12px;
+		  text-align:left;
+          position: fixed;
+          bottom: 10px;
+          right: 20px;
+}
+
+/******************************************************************
+ ID SELECTORS (apply to tags with ID=<whatever> modifiers
+*******************************************************************/
+/*
+#outer-wrapper {
+	background-image:url(../Images/1733at1800.jpg)
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*/
+
+#logo { 
+	margin:10px 20px 0 0;
+	float:right;
+}
+
+#botnav {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:30px;
+	width:300px;
+    text-align:left;
+    position: fixed;
+    left: 50px;
+}
+
+/* LINE 1 */
+#botnav1.slidebotnav01 a:active, #botnav1.slidebotnav01 a:visited, #botnav1.slidebotnav01 a:link {
+     color:#600;  
+}
+#botnav1.slidebotnav01 a:hover {
+     color:#999;  
+}
+#botnav1.slidebotnav02 a:active, #botnav1.slidebotnav02 a:visited, #botnav1.slidebotnav02 a:link {
+     color:#000;  
+}
+#botnav1.slidebotnav02 a:hover {
+     color:#999;  
+}
+#botnav1.slidebotnav03 a:active, #botnav1.slidebotnav03 a:visited, #botnav1.slidebotnav03 a:link {
+     color:#000;  
+}
+#botnav1.slidebotnav03 a:hover {
+     color:#999;  
+}
+
+/* LINE 2 */
+#botnav2.slidebotnav01 a:active, #botnav2.slidebotnav01 a:visited, #botnav2.slidebotnav01 a:link {
+     color:#000;  
+}
+#botnav2.slidebotnav01 a:hover {
+     color:#999;  
+}
+#botnav2.slidebotnav02 a:active, #botnav2.slidebotnav02 a:visited, #botnav2.slidebotnav02 a:link {
+     color:#600;  
+}
+#botnav2.slidebotnav02 a:hover {
+     color:#999;  
+}
+#botnav2.slidebotnav03 a:active, #botnav2.slidebotnav03 a:visited, #botnav2.slidebotnav03 a:link {
+     color:#000;  
+}
+#botnav2.slidebotnav03 a:hover {
+     color:#999;  
+}
+
+/* LINE 3 */
+#botnav3.slidebotnav01 a:active, #botnav3.slidebotnav01 a:visited, #botnav3.slidebotnav01 a:link {
+     color:#000;  
+}
+#botnav3.slidebotnav01 a:hover {
+     color:#999;  
+}
+#botnav3.slidebotnav02 a:active, #botnav3.slidebotnav02 a:visited, #botnav3.slidebotnav02 a:link {
+     color:#000;  
+}
+#botnav3.slidebotnav02 a:hover {
+     color:#999;  
+}
+#botnav3.slidebotnav03 a:active, #botnav3.slidebotnav03 a:visited, #botnav3.slidebotnav03 a:link {
+     color:#600;  
+}
+#botnav3.slidebotnav03 a:hover {
+     color:#999;  
+}
+
+
+#botnav.slidebotnav01 {
+   bottom: 200px;
+}
+#botnav.slidebotnav02 {
+   bottom: 200px;
+}
+#botnav.slidebotnav03 {
+    bottom: 280px;
+}
+
+/*
+#topnav { margin:0 0 0 0;
+          font-family:Verdana, Geneva, sans-serif;
+          font-size:14px;
+		  width:650px;
+          float:bottom;}
+			
+#topnav ul { border-top:1px #BBB solid;
+             border-bottom:1px #BBB solid;
+             margin:10px 0;
+             padding:7px 7px; }
+			
+#topnav ul li { display:inline; padding:0px 2px;}
+#topnav ul li a { padding:0px 0px; }
+
+#topnav ul li a:link            { color: #BBB; }
+#topnav ul li a:visited         { color: #BBB; }
+#topnav ul li a:active          { color: #BBB; }
+#topnav ul li a:focus           { color: #BBB; }
+#topnav ul li a:hover           { color: #888; }
+*/
+
+

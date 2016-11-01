@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="robots" content'"INDEX,FOLLOW" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Will Dotson Guitars - New York, NY</title>
+<meta name="keywords" content="guitars,archtop guitars,flattop guitars,handmade guitars" />
+<meta name="description" content="Maker of handbuilt archtop and flattop guitars and double basses. Also expert repairs and restoration." />
+<link href="Styles/reset.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="Styles/Styles01.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+
+<body>
+<div id="frontpage" class="slideshow slide01">
+
+  <audio id="AudioTrack" controls loop autoplay>
+    <source src="ItHadtoBeYou.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    var vid = document.getElementById("AudioTrack");
+    vid.volume = 0.3;
+  </script>
+
+  <div id="logo" >
+    <img src="Images/DOTSONGuitars03at72.png" />
+  </div>
+
+<!--
+   <div id="topnav" >
+     <ul>
+       <li><a href="index.html">HOME</a></li>
+       <li><a href="guitars.html">GUITARS</a></li>
+       <li><a href="basses.html">DOUBLE BASSES</a></li>
+       <li><a href="ordering.html">ORDERING</a></li>
+       <li><a href="atwork.html">AT WORK</a></li>
+       <li><a href="instock.html">IN STOCK</a></li>
+       <li><a href="about.html">ABOUT</a></li>
+       <li><a href="contact.html">CONTACT</a></li>
+     </ul>
+    </div>
+-->
+
+    <div id="botnav">
+	  <div id="botnav1">
+        <a href="ArchtopGuitars.html" >Archtops<br></a>
+      </div>
+	  <div id="botnav2">
+        <a href="FlattopGuitars.html" >Flattops<br></a>
+      </div>
+	  <div id="botnav3">
+        <a href="basses.html" >Basses</a>
+      </div>
+    </div>
+
+    <p class="about-text">Dotson Guitars
+    <br>New York, NY and North Bennington, VT
+    <br>wdotson@wdotson.com
+    <br>(646)653-5764</p>
+
+
+<!--
+    <p class="copyrt-text">Copyright 2013, 2016 William Dotson</p>
+    <p class="footer-text">Copyright 2013 William Dotson</p>
+-->
+
+</div>
+</body>
+
+
+
+
+
+
+<script type="text/javascript">
+
+var step=1;	//variable that will increment through the images
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+
+document.getElementById('frontpage').className = "slideshow slide0"+step;
+
+var botnav = document.getElementById('botnav');
+botnav.className = "slidebotnav0"+step;
+
+if (step === 1 ) {
+    botnav1.className = "slidebotnav01";
+    botnav2.className = "slidebotnav01";
+    botnav3.className = "slidebotnav01";
+}
+if (step === 2 ) {
+    botnav1.className = "slidebotnav02";
+    botnav2.className = "slidebotnav02";
+    botnav3.className = "slidebotnav02";
+}
+if (step === 3 ) {
+    botnav1.className = "slidebotnav03";
+    botnav2.className = "slidebotnav03";
+    botnav3.className = "slidebotnav03";
+}
+
+if (step<3)
+  step++
+ else
+  step=1
+ //call function "slideit()" every 12 seconds
+ setTimeout("slideit()",12000)
+}
+
+
+slideit();
+
+
+</script>
