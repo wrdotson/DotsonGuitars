@@ -194,27 +194,3 @@ div#frontpage {
 #botnav.slidebotnav03 {
     bottom: 280px;
 }
-
-/*
-#topnav { margin:0 0 0 0;
-          font-family:Verdana, Geneva, sans-serif;
-          font-size:14px;
-		  width:650px;
-          float:bottom;}
-			
-#topnav ul { border-top:1px #BBB solid;
-             border-bottom:1px #BBB solid;
-             margin:10px 0;
-             padding:7px 7px; }
-			
-#topnav ul li { display:inline; padding:0px 2px;}
-#topnav ul li a { padding:0px 0px; }
-
-#topnav ul li a:link            { color: #BBB; }
-#topnav ul li a:visited         { color: #BBB; }
-#topnav ul li a:active          { color: #BBB; }
-#topnav ul li a:focus           { color: #BBB; }
-#topnav ul li a:hover           { color: #888; }
-*/
-
-
