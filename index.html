@@ -75,44 +75,47 @@
 
 <script type="text/javascript">
 
-var step=1;	//variable that will increment through the images
+var step = 1;	//variable that will increment through the images
 
-function slideit(){
- //if browser does not support the image object, exit.
- if (!document.images)
-  return
+function slideit() {
+  //if browser does not support the image object, exit.
+  if (!document.images) {
+    return;
+  }
 
-document.getElementById('frontpage').className = "slideshow slide0"+step;
+  document.getElementById('frontpage').className = 'slideshow slide0' + step;
 
-var botnav = document.getElementById('botnav');
-botnav.className = "slidebotnav0"+step;
+  var botnav = document.getElementById('botnav');
+  botnav.className = 'slidebotnav0' + step;
 
-if (step === 1 ) {
-    botnav1.className = "slidebotnav01";
-    botnav2.className = "slidebotnav01";
-    botnav3.className = "slidebotnav01";
-}
-if (step === 2 ) {
-    botnav1.className = "slidebotnav02";
-    botnav2.className = "slidebotnav02";
-    botnav3.className = "slidebotnav02";
-}
-if (step === 3 ) {
-    botnav1.className = "slidebotnav03";
-    botnav2.className = "slidebotnav03";
-    botnav3.className = "slidebotnav03";
-}
+  if (step === 1) {
+    botnav1.className = 'slidebotnav01';
+    botnav2.className = 'slidebotnav01';
+    botnav3.className = 'slidebotnav01';
+  }
 
-if (step<3)
-  step++
- else
-  step=1
- //call function "slideit()" every 12 seconds
- setTimeout("slideit()",12000)
-}
+  if (step === 2) {
+    botnav1.className = 'slidebotnav02';
+    botnav2.className = 'slidebotnav02';
+    botnav3.className = 'slidebotnav02';
+  }
 
+  if (step === 3) {
+    botnav1.className = 'slidebotnav03';
+    botnav2.className = 'slidebotnav03';
+    botnav3.className = 'slidebotnav03';
+  }
+
+  if (step < 3) {
+    step++;
+  } else {
+    step = 1;
+  }
+
+  //call function "slideit()" every 12 seconds
+  setTimeout('slideit()', 12000);
+};
 
 slideit();
-
 
 </script>
