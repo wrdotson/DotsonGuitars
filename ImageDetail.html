@@ -8,12 +8,31 @@
   <body>
     <img id="image-obj" src="Images/" />
     <div id="footer">
-      <p class="credit-text">Photo - Christopher Burke Studios</p>
+      <p id="credit" class="credit-text"></p>
     </div>
   </body>
   <script> 
-    var imageSrc = window.location.search.slice(5, window.location.search.length);
+    function getQueryVariable(variable) {
+      var query = window.location.search.substring(1);
+      var vars = query.split('&');
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+          return decodeURIComponent(pair[1]);
+        }
+      }
+
+      console.log('Query variable %s not found', variable);
+    }
+    var credits = {
+      'burke': 'Photo - Christopher Burke Studios',
+      'waltzer': 'Photo - Bill Waltzer Photography',
+    };
+    var imageSrc = getQueryVariable('src');
     var imageObj = document.getElementById('image-obj');
+    var creditObj = document.getElementById('credit');
+
     imageObj.src = 'Images/' + imageSrc;
+    creditObj.textContent = credits[getQueryVariable('credit')];
   </script>
 </html>
