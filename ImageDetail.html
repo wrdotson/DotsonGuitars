@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DotsonGuitars.com</title>
+    <link href="Styles/Styles01.css" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+  <body>
+    <img id="image-obj" src="Images/" />
+    <div id="footer">
+      <p id="credit" class="credit-text"></p>
+    </div>
+  </body>
+  <script> 
+    function getQueryVariable(variable) {
+      var query = window.location.search.substring(1);
+      var vars = query.split('&');
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+          return decodeURIComponent(pair[1]);
+        }
+      }
+
+      console.log('Query variable %s not found', variable);
+    }
+    var credits = {
+      'burke': 'Photo - Christopher Burke Studios',
+      'waltzer': 'Photo - Bill Waltzer Photography',
+    };
+    var imageSrc = getQueryVariable('src');
+    var imageObj = document.getElementById('image-obj');
+    var creditObj = document.getElementById('credit');
+
+    imageObj.src = 'Images/' + imageSrc;
+    creditObj.textContent = credits[getQueryVariable('credit')];
+  </script>
+</html>
